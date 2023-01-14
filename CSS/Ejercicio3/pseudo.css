@@ -1,0 +1,27 @@
+.boton{
+    padding: 30px 100px;
+    border: none;
+    background-color: #ddd;
+    position: relative;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+
+.boton::before {
+    content: "Pasa por encima";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: green;
+    color: white;
+}
+
+.boton:hover::before {
+    content: "!Hecho¡";
+    color: white;
+}
